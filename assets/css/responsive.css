@@ -183,8 +183,104 @@
   .footer__top {
     grid-template-columns: 0.5fr 0.5fr 1fr;
   }
+  /* Ẩn Action(Log In, Sign Up) trên Tablet */
+  .show-on-mobile {
+    display: none;
+  }
 }
 
 /*=========== Mobile ===========*/
 @media (max-width: 767.98px) {
+  /* 17. Responsive phần header (mobile) */
+  .header__action {
+    display: none;
+  }
+  /* 18. Responsive menu & navbar (mobile) */
+  .menu-header__icon {
+    top: 16px;
+  }
+  .menu-drawer {
+    inset: 0 20% 0 0;
+    padding: 40px;
+  }
+  .navbar__item {
+    list-style-type: none;
+  }
+  /* Thêm vạch kẻ ngăn cách */
+  .separate {
+    border-top: 1.5px solid #8c8b8b;
+    margin-top: 10px;
+  }
+  /* 19. Responsive hero (mobile) */
+  .hero__img--small {
+    display: none;
+  }
+  .hero__img--large {
+    width: 100%;
+    height: auto;
+  }
+  .hero__heading {
+    font-size: 3rem;
+  }
+  .hero__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  /* 20. Responsive service (mobile) */
+  .service {
+    padding: 70px 0;
+  }
+  .section-desc {
+    width: 93%;
+  }
+  .service__img {
+    height: auto;
+  }
+  /* 21. Responsive work (mobile) */
+  .work__desc {
+    width: 100%;
+  }
+  .work-item {
+    padding: 20px;
+  }
+  /* 22. Responsive about (mobile) */
+  .about {
+    margin-top: 20px;
+    padding: 40px 0;
+  }
+  .section-heading {
+    font-size: 3rem;
+  }
+  /* 23. Responsive team (mobile) */
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+  /* 24. Responsive install (mobile) */
+  .install__inner {
+    margin: 40px 0;
+    padding: 0 8px;
+  }
+  .install__content {
+    min-width: 250px;
+  }
+  /* 25. Responsive blog (mobile) */
+  .blog__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .blog__heading {
+    text-align: center;
+  }
+  /* 26. Responsive appointment (mobile) */
+  .appointment__inner {
+    padding: 30px 5px;
+  }
+  /* 27. Responsive footer (mobile) */
+  .footer__top {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
